@@ -34,7 +34,6 @@ class App extends Component {
 
   // Render the page
   render() {
-    const data = [];
     const muse = this.state.muse;
     const aqours = this.state.aqours;
     const drawerData = {
@@ -47,12 +46,12 @@ class App extends Component {
       <div>
         <MenuDrawer data={drawerData}/>
         <Container maxWidth='md'>
-          <div class='cardsContainer'>
+          <div className='cardsContainer'>
             <Typography variant='h3' component='h1' color='textPrimary'>
               Spreading musical joy through the years!
             </Typography>
             {/* Navbar taken from NavBar component with a custom text value passed to it. */}
-            <div class='cards'>
+            <div className='cards'>
               <Cards data={{muse: drawerData.muse, aqours: drawerData.aqours}}/>
             </div>
           </div>
