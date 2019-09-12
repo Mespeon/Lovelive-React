@@ -31,3 +31,11 @@
     transform: rotate(360deg);
   }
 }
+
+.cardsContainer {
+  margin-top: 10%;
+}
+
+.cardsContainer .cards {
+  margin-top: 2rem;
+}
